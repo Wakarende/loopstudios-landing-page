@@ -4,7 +4,54 @@
     --darkGrey:  hsl(0, 0%, 55%);
     --veryDarkGrey:  hsl(0, 0%, 41%);
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
 body{
     font-size: 15px;
+}
+
+.header{
+    background-image: url(images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 70px 0px;
+    column-gap: 400px;
+}
+.nav ul {
+    display: flex;
+    column-gap: 30px;
+    color: var(--white);
+}
+ul{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 64px;
+}
+
+.content{
+    border: 2px solid var(--white);
+    width: 45%;
+    position: absolute;
+    left: 13%;
+    top: 34%;
+    padding: 25px;
 }
